@@ -1,0 +1,17 @@
+﻿input{
+    display:block;
+}
+#register{
+    display:inline-block;
+}
+#login{
+    display:inline-block;
+    vertical-align:top;
+}
+h4{
+    color:red;
+}
+
+table, th, td {
+   border: 1px solid black;
+}

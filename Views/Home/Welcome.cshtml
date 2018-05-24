@@ -1,0 +1,33 @@
+﻿<link rel="stylesheet" href="~/css/style.css"/>
+<a href="logout">Logout</a>
+<h3>Hello  @ViewBag.name</h3>
+<h1>Current Auctions</h1>
+<table style="width:100%">
+  <tr>
+    <th>Product</th>
+    <th>Seller</th>
+    <th>Top Bid</th>
+    <th>Time Remaining</th>
+    <th></th>      
+  </tr>
+  @{
+      foreach(var auction in @ViewBag.Auction){
+  <tr>
+      <td><a href = "auction/@auction.Name">@auction.Name</a></td>
+      <td>@auction.Person.First</td>
+      <td>@auction.Bids</td>
+      <td>@auction.End</td>
+      <td><a href="delete/@auction.id">Delete</a></td>
+  </tr>
+      }
+  }
+
+</table>
+
+
+<form action="new" method="get">
+    <button input type=new name="New Auction">New Auction</button>
+</form>
+
+<p>Your Current Wallet: $@ViewBag.wallet</p>
+

@@ -1,0 +1,11 @@
+<a href="/logout">Logout</a>
+<a href="/welcome">Home</a>
+<h1>Product: @ViewBag.product</h1>
+<h3>Created By</h3>
+<h3>Time Remaining @ViewBag.time</h3>
+<h3>Current Highest Bid @ViewBag.bid</h3>
+<p>Details @ViewBag.details</p>
+<form action="/bid" method="post">
+    <input type="text" name="bid">
+    <button>Bid!</button>
+</form>

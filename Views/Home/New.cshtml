@@ -1,0 +1,12 @@
+<a href="logout">Logout</a>
+<a href="welcome">Home</a>
+<h1>New Auction</h1>
+
+<form action='vnew' method='POST'>
+    Product Name:<input type='text' name=name>
+    Starting Bid:<input type='text' name=bid>
+    Description:<input type='text' name=description>
+    End Date:<input type='date' name=end>
+    <button>Create Auction</button>
+</form>
+<p>@ViewBag.error</p>
